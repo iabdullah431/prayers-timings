@@ -26,26 +26,22 @@ export default function MainContent() {
 
   const [remainingTime, setRemainingTime] = useState("");
 
-  const [selectedCity, setSelectedCity] = useState({
-    displayName: "مكة المكرمة",
-    apiName: "Makkah al Mukarramah",
-  });
+  const [selectedCity, setSelectedCity] = useState(    {
+    displayName: "الرياض",
+    apiName: "Riyadh",
+  },);
 
   const [today, setToday] = useState("");
 
   const avilableCities = [
     {
-      displayName: "مكة المكرمة",
-      apiName: "Makkah al Mukarramah",
-    },
-    {
       displayName: "الرياض",
       apiName: "Riyadh",
     },
     {
-      displayName: "الدمام",
-      apiName: "Dammam",
-    },
+      displayName: "عنيزة",
+      apiName: "Unaziah",
+    },    
   ];
 
   const prayersArray = [
