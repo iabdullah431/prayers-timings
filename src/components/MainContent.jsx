@@ -85,7 +85,7 @@ export default function MainContent() {
   const setupCountdownTimer = () => {
     const momentNow = moment();
 
-    let prayerIndex ;
+    let prayerIndex =0;
 
     if (
       momentNow.isAfter(moment(timings["Fajr"], "hh:mm")) &&
@@ -156,9 +156,7 @@ export default function MainContent() {
 
         <Grid xs={6}>
           <div>
-            <h2>
-              متبقي حتى صلاة
-              {prayersArray[nextPrayerIndex].displayName}
+            <h2> {`متبقي حتى صلاة   ${prayersArray[nextPrayerIndex].displayName}`}
             </h2>
             <h1>{remainingTime}</h1>
           </div>
@@ -168,7 +166,7 @@ export default function MainContent() {
       <Divider style={{ borderColor: "white", opacity: "0.1" }} />
 
       <Stack
-        direction="row"
+        direction 
         justifyContent={"space-around"}
         style={{ marginTop: "50px" }}
       >
