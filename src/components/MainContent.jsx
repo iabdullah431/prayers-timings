@@ -17,7 +17,7 @@ moment.locale("ar");
 export default function MainContent() {
   const [nextPrayerIndex, setNextPrayerIndex] = useState(2);
   const [timings, setTimings] = useState({
-    Fajr: "04:20",
+    Fajr: "05:20",
     Dhuhr: "11:50",
     Asr: "15:18",
     Sunset: "18:03",
